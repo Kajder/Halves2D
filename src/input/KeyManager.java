@@ -174,13 +174,13 @@ public class KeyManager implements KeyListener{
 		 P2_sprint = (controller2.isButtonPressed(3) || keys[KeyEvent.VK_B]); //button Y
 			P2_dropOrCallBall = (controller2.isButtonPressed(2) || keys[KeyEvent.VK_N]); //button B
 		 //P2 direction left 
-		 if (controller2.getAxisValue(4)>deadZone2 || keys[KeyEvent.VK_U]) P2_dirLeft = true; //left trigger
+		 if (controller2.getAxisValue(4)>deadZone2 || keys[KeyEvent.VK_U]) P2_dirRight = true;//P2_dirLeft = true; //left trigger
 		//P2 direction right
 		 if (controller2.getAxisValue(4)!=-1) releaseFlagP2RT=true;
 		 if ((releaseFlagP2RT==false)&&(controller2.getAxisValue(4)==-1))releaseFlagP2RT=false;
 		 
 		 if (releaseFlagP2RT==true){
-				 if (controller2.getAxisValue(4)<-deadZone2) P2_dirRight = true; //right trigger
+				 if (controller2.getAxisValue(4)<-deadZone2) P2_dirLeft = true;//P2_dirRight = true; //right trigger
 			 }	
 		 if (keys[KeyEvent.VK_I]) P2_dirRight = true; //right trigger		 
 		// System.out.println("Pad2, triggers value: "+controller2.getAxisValue(4));
