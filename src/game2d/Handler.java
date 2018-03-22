@@ -2,6 +2,9 @@ package game2d;
 
 import input.KeyManager;
 import input.MouseManager;
+import states.SettingsState;
+import states.State;
+
 public class Handler {
 
 	private Game game;
@@ -17,5 +20,4 @@ public class Handler {
 	public int getPitchWidth(){return game.getPitchWidth();}
 	public int getHeight(){return game.getHeight();}
 	public Game getGame() {return game;}
-	
 }

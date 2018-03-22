@@ -9,10 +9,7 @@ import display.MainPanel;
 import gfx.Assets;
 import input.KeyManager;
 import input.MouseManager;
-import states.GameState;
-import states.MenuState;
-import states.State;
-import states.TrainingState;
+import states.*;
 
 import javax.swing.*;
 
@@ -66,8 +63,6 @@ public class Game implements Runnable{
 	}
 	public void initStates(){
 		menuState = new MenuState(handler);
-		gameState = new GameState(handler);
-		trainingState = new TrainingState(handler);
 		State.setState(menuState);
 	}
 

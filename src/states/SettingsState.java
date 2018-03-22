@@ -1,82 +1,114 @@
 package states;
 import game2d.Handler;
-import game2d.ui.ClickListener;
-import game2d.ui.SettingsPanel;
-import game2d.ui.UIImageButton;
+import game2d.ui.*;
 import game2d.ui.UIManager;
 import game2d.ui.support.GBC;
 import gfx.Assets;
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class SettingsState extends State {
     private UIManager uiManager;
+    public ActionListener goMainMenu, goRightPanel, goLeftPanel;
     private JFrame frame;
     private JPanel mainPanel;
+    private SettingsPanel panelsArray[];
     private Canvas canvas;
-    private SettingsPanel settingsPanel;
+    private SettingsPanel_0 settingsPanel;
+    private NavigationButton goLeftButton, goRightButton, goUpButton;
     private Graphics g;
     private Graphics2D g2d;
     private Dimension dimension;
-    private int width, height;
+    private int width, height, currentPanel;
+
 
     public SettingsState(Handler handler){
         super(handler);
+        panelsArray=new SettingsPanel[3];
         width = handler.getGame().getWidth();
         height = handler.getGame().getHeight();
-        uiManager=new UIManager(handler);
         frame=handler.getGame().getDisplay().getFrame();
-        //mainPanel = handler.getGame().getDisplay().getPanel();
-        //frame.remove(mainPanel);
         canvas=handler.getGame().getDisplay().getCanvas();
-        //frame.remove(canvas); //causing error, as game.render has a null pointer
         canvas.setVisible(false);
+        initActions();
+        initNavigationButtons();
+        addPanel(currentPanel);
 
-        if (settingsPanel==null){
-        settingsPanel = new SettingsPanel(handler, uiManager);
-        settingsPanel.setLayout(new GridLayout(2,1));
-        settingsPanel.addMouseListener(handler.getMouseManager());
-        settingsPanel.addMouseMotionListener(handler.getMouseManager());
-        //settingsPanel.addKeyListener(handler.getGame().getKeyManager());
-        settingsPanel.setPreferredSize(new Dimension(width, height));
-        dimension = settingsPanel.getSize();
-        frame.setLayout(new GridBagLayout());
-        frame.add(settingsPanel);
-        frame.validate();
-        }
-        else{
-            frame.validate();
-            settingsPanel.setVisible(true);
-        }
-
-
-        uiManager.addObject(new UIImageButton((int)(dimension.width-30), 5, 20, 20, Assets.btn_arrow, new ClickListener(){
-            public void onClick(){
-                State.setState(handler.getGame().menuState);
-                handler.getMouseManager().setUIManager(State.getState().getUIManager());
-                //frame.add(mainPanel);
-                frame.remove(settingsPanel);
-                settingsPanel.setFocusable(false);
-                frame.setLayout(new GridBagLayout());
-                frame.repaint();
-                handler.getGame().getDisplay().getFrame().validate();
-                frame.setFocusable(true);
-                frame.requestFocus();
-                //settingsPanel.setVisible(false);
-                canvas.setPreferredSize(new Dimension(width, height));
-                canvas.setVisible(true);
-            }
-        }));
     }
-    public void tick(){
-        dimension = settingsPanel.getSize();
-        uiManager.getObject(0).setX((dimension.width-30));
-        uiManager.tick();
-    };
-    public void render(Graphics g) {
-        uiManager.render(g);
-        settingsPanel.repaint();
-      }
-    public void renderG2D(Graphics2D g2d) {}
+    
+    public void addPanel(int panelID){
+        switch (panelID) {
+            case 0:{
+                panelsArray[panelID] = new SettingsPanel_0(handler);
+                break;}
+            case 1:{
+                panelsArray[panelID] = new SettingsPanel_1(handler);
+                break;}
+            case 2:{
+                panelsArray[panelID] = new SettingsPanel_2(handler);
+                break;}
+        }
+        panelsArray[panelID].addMouseListener(handler.getMouseManager());
+        panelsArray[panelID].addMouseMotionListener(handler.getMouseManager());
+        panelsArray[panelID].setPreferredSize(new Dimension(width, height));
+        dimension = panelsArray[panelID].getSize();
+        frame.setLayout(new GridBagLayout());
+        frame.add(panelsArray[panelID]);
+
+        panelsArray[panelID].addNavigationButtons(goLeftButton, goUpButton, goRightButton);
+        frame.validate();
+    }
+
+    public void initNavigationButtons() {
+        goLeftButton = new NavigationButton(Assets.btn_arrowLEFT[0], Assets.btn_arrowLEFT[1], 60, 30);
+        goLeftButton.addActionListener(goLeftPanel);
+        goRightButton = new NavigationButton(Assets.btn_arrowRIGHT[0], Assets.btn_arrowRIGHT[1], 60, 30);
+        goRightButton.addActionListener(goRightPanel);
+        goUpButton = new NavigationButton(Assets.btn_arrowUP[0], Assets.btn_arrowUP[1], 60, 30);
+        goUpButton.addActionListener(goMainMenu);
+    }
+
+    public void initActions(){
+        goMainMenu = event-> {
+            goUpButton.changeBackground();
+            State.setState(handler.getGame().menuState);
+            handler.getMouseManager().setUIManager(State.getState().getUIManager());
+            frame.remove(panelsArray[currentPanel]);
+            panelsArray[currentPanel].setFocusable(false);
+            frame.setLayout(new GridBagLayout());
+            frame.repaint();
+            handler.getGame().getDisplay().getFrame().validate();
+            frame.setFocusable(true);
+            frame.requestFocus();
+            canvas.setPreferredSize(new Dimension(width, height));
+            canvas.setVisible(true);
+            frame.validate();
+        };
+        goRightPanel = event->{
+            goRightButton.changeBackground();
+            frame.remove(panelsArray[currentPanel]);
+            currentPanel++;
+            if (currentPanel==panelsArray.length)currentPanel=0;
+            addPanel(currentPanel);
+        };
+        goLeftPanel = event->{
+            goLeftButton.changeBackground();
+            frame.remove(panelsArray[currentPanel]);
+            currentPanel--;
+            if (currentPanel==-1)currentPanel=panelsArray.length-1;
+            addPanel(currentPanel);
+        };
+
+           }
+    public void tick(){}
+    public void render(Graphics g){}
+    public void renderG2D(Graphics2D g2d){}
     public UIManager getUIManager(){return uiManager;}
+
 }

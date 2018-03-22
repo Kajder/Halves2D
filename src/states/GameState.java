@@ -131,7 +131,7 @@ public class GameState extends State {
 		player2VsVerNet_UR= new PlayerFlatContact(player2,verNet_UR,false);
 		
 		// back arrow button
-		uiManager.addObject(new UIImageButton(945, 5, 20, 20, Assets.btn_arrow, new ClickListener(){
+		uiManager.addObject(new UIImageButton(945, 5, 20, 20, Assets.btn_arrowUP, new ClickListener(){
 			public void onClick(){
 				endMatch();
 				handler.getGame().getDisplay().getFrame().validate();

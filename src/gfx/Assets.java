@@ -10,7 +10,7 @@ public class Assets {
 	gradientBlue, gradientRed, clock, clockHand, clockFace, whiteFace, blueFace, redFace, whiteBar, blueBar, redBar, menuBackground, halvesText, imgGrass, imgUrban,
 	thunderBlue, thunderRed, kickingShoeBlue, kickingShoeRed;
 	//public static Image field;
-	public static BufferedImage[] framesBall, framesPlayer1, framesPlayer2, startBoard, btn_start, btn_trainingP1, btn_trainingP2, btn_settings, btn_info, btn_arrow;
+	public static BufferedImage[] framesBall, framesPlayer1, framesPlayer2, startBoard, btn_start, btn_trainingP1, btn_trainingP2, btn_settings, btn_info, btn_arrowUP, btn_arrowLEFT, btn_arrowRIGHT;
 	
 	public static void init(){
 		SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/textures/sheet.png"));
@@ -23,7 +23,9 @@ public class Assets {
 		btn_trainingP2 = new BufferedImage[2];
 		btn_settings = new BufferedImage[2];
 		btn_info = new BufferedImage[2];
-		btn_arrow = new BufferedImage[2];
+		btn_arrowUP = new BufferedImage[2];
+		btn_arrowLEFT = new BufferedImage[2];
+		btn_arrowRIGHT = new BufferedImage[2];
 		
 		//player1 = sheet.crop(23,602, 43, 22);
 		player2 = sheet.crop(71,602,44, 22);
@@ -152,8 +154,16 @@ public class Assets {
 		btn_settings[1]=sheet.crop(934,1011, 90, 56);
 		btn_info[0]=sheet.crop(843,1068, 90, 56);
 		btn_info[1]=sheet.crop(934,1068, 90, 56);
-		btn_arrow[0]=sheet.crop(923, 938, 100, 64);
-		btn_arrow[1]=sheet.crop(924, 1162, 100, 64);
+
+		btn_arrowUP[0]=sheet.crop(923, 938, 100, 64);
+		btn_arrowUP[1]=sheet.crop(924, 1162, 100, 64);
+
+		btn_arrowLEFT[0]=sheet.crop(924, 1359, 100, 66);
+		btn_arrowLEFT[1]=sheet.crop(924, 1425, 100, 64);
+
+		btn_arrowRIGHT[0]=sheet.crop(924, 1228, 100, 66);
+		btn_arrowRIGHT[1]=sheet.crop(924, 1294, 100, 64);
+
 		menuBackground=sheet.crop(0, 1156, 600, 600);
 		halvesText=sheet.crop(848, 1127, 166, 33);
 		imgGrass=sheet.crop(608, 1163, 100, 100);

@@ -1,4 +1,11 @@
 package game2d.ui.support;
 
-public class ColorPanel {
+import javax.swing.*;
+import java.awt.*;
+
+public class ColorPanel extends JPanel{
+
+    public ColorPanel(Color color){
+        super.setBackground(color);
+    }
 }

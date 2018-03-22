@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Path;
 
-public class SettingsPanel extends JPanel {
+public class SettingsPanel_0 extends SettingsPanel {
     private Handler handler;
     private JPanel upperPanel, bottomPanel, visualPanel, upperPanel0, upperPanel1, upperPanel2, upperPanel3, fpsPanel, pitchPanel;
     private JTextField textField;
@@ -37,8 +37,10 @@ public class SettingsPanel extends JPanel {
     private Path2D path = new Path2D.Float();
     private Graphics g;
     private Graphics2D g2d;
-    public SettingsPanel(Handler handler){
+    public SettingsPanel_0(Handler handler){
         this.handler = handler;
+        setLayout(new GridLayout(2,1));
+        panelID=0;
         //TEXT FIELD
         textField = new JTextField() {
             @Override public void setBorder(Border border) {

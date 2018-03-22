@@ -43,13 +43,15 @@ public class Player extends Creature{
 		staminaRebuilt=4;
 		playerFPS=handler.getFPS();
 		alignmentFPS = (float)(Math.round(60/playerFPS*10000f))/10000f;
-
+		sprintSpeed*=alignmentFPS;
+		sprintBallSpeed*=alignmentFPS;
+		walkSpeed*=alignmentFPS;
 
 		playerMass = 80;//kg
 		footMass = playerMass*0.022;//kg
 		sprintLoadTime=3;
-		sprintLoadIncrement = (sprintSpeed-walkSpeed)/(sprintLoadTime*handler.getFPS());
-		sprintBallLoadIncrement = (sprintBallSpeed-walkSpeed)/(sprintLoadTime*handler.getFPS());
+		sprintLoadIncrement = ((sprintSpeed-walkSpeed))/(sprintLoadTime*handler.getFPS());
+		sprintBallLoadIncrement = ((sprintBallSpeed-walkSpeed))/(sprintLoadTime*handler.getFPS());
 	}
 
 	public void checkIfRunning(){
@@ -199,9 +201,9 @@ public class Player extends Creature{
 			delta = 0;
 		}
 		if ((speed < sprintSpeed)&&isRunning) delta += sprintLoadIncrement;
-		speed = (float) ((walkSpeed + delta) * alignmentFPS);
+		speed = (float) (walkSpeed + delta);
 		if (speed > sprintSpeed)speed=(float)sprintSpeed;
-		System.out.println("speed: "+speed);
+		System.out.println("speed: "+speed+", increment val: "+sprintLoadIncrement);
 	}
 
 	public void calculateSprintBallSpeed(){
@@ -209,11 +211,11 @@ public class Player extends Creature{
 			delta=0;
 		}
 		if ((speed<sprintBallSpeed)&&(isRunning))delta+=sprintBallLoadIncrement;
-		speed=(float)((walkSpeed+delta)*alignmentFPS);
+		speed=(float)(walkSpeed+delta);
 		if (speed>sprintBallSpeed){
 			speed=(float)sprintBallSpeed;
 		}
-		System.out.println("speed: "+speed);
+		System.out.println("speed: "+speed+", increment val: "+sprintBallLoadIncrement);
 	}
 
 	private void getInput(){
@@ -226,8 +228,8 @@ public class Player extends Creature{
 //SPEED
 		if ((sprint)&&(!hasAball)) calculateSprintSpeed();
 		if (sprint&&hasAball) calculateSprintBallSpeed();
-		if (!sprint) speed = (float) walkSpeed*alignmentFPS;
-		if (stamina<=10) speed=(float) (exhaustedSpeed*alignmentFPS);
+		if (!sprint) speed = (float) walkSpeed;
+		if (stamina<=10) speed=(float) exhaustedSpeed;
 		if((!up)&&(!down)&&(!left)&&(!right)) speed=0;
 
 
@@ -255,8 +257,8 @@ public class Player extends Creature{
 		if (KeyManager.controller1!=null){
 			if ((sprint)&&(!hasAball)) calculateSprintSpeed();
 			if (sprint&&hasAball) calculateSprintBallSpeed();
-			if (!sprint) speed = (float) walkSpeed*alignmentFPS;
-			if (stamina<=10) speed=(float) (exhaustedSpeed*alignmentFPS);
+			if (!sprint) speed = (float) walkSpeed;
+			if (stamina<=10) speed=(float) exhaustedSpeed;
 
 			//if(!isRunning) speed=0;
 			if (hasAball&&callBall) dropBall(1000);
@@ -300,8 +302,8 @@ public class Player extends Creature{
 		if (KeyManager.controller2!=null){
 			if ((sprint)&&(!hasAball)) calculateSprintSpeed();
 			if (sprint&&hasAball) calculateSprintBallSpeed();
-			if (!sprint) speed = (float) walkSpeed*alignmentFPS;
-			if (stamina<=10) speed=(float) (exhaustedSpeed*alignmentFPS);
+			if (!sprint) speed = (float) walkSpeed;
+			if (stamina<=10) speed=(float) exhaustedSpeed;
 
 			//if(!isRunning) speed=0;
 			if (hasAball&&callBall) dropBall(1000);

@@ -131,7 +131,7 @@ public class TrainingState extends State{
 		ballVsVerNet_BR = new BallFlatContact(ball,verNet_BR, 0.85, false);
 		
 		// back arrow button
-		uiManager.addObject(new UIImageButton(945, 5, 20, 20, Assets.btn_arrow, new ClickListener(){
+		uiManager.addObject(new UIImageButton(945, 5, 20, 20, Assets.btn_arrowUP, new ClickListener(){
 			public void onClick(){
 			State.setState(handler.getGame().menuState);
 			handler.getMouseManager().setUIManager(State.getState().getUIManager());
