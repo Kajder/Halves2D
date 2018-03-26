@@ -30,7 +30,7 @@ public class SettingsState extends State {
 
     public SettingsState(Handler handler){
         super(handler);
-        panelsArray=new SettingsPanel[3];
+        panelsArray=new SettingsPanel[4];
         width = handler.getGame().getWidth();
         height = handler.getGame().getHeight();
         frame=handler.getGame().getDisplay().getFrame();
@@ -53,6 +53,9 @@ public class SettingsState extends State {
             case 2:{
                 panelsArray[panelID] = new SettingsPanel_2(handler);
                 break;}
+            case 3:{
+                panelsArray[panelID] = new SettingsPanel_3(handler);
+                break;}
         }
         panelsArray[panelID].addMouseListener(handler.getMouseManager());
         panelsArray[panelID].addMouseMotionListener(handler.getMouseManager());
@@ -66,11 +69,11 @@ public class SettingsState extends State {
     }
 
     public void initNavigationButtons() {
-        goLeftButton = new NavigationButton(Assets.btn_arrowLEFT[0], Assets.btn_arrowLEFT[1], 60, 30);
+        goLeftButton = new NavigationButton(Assets.btn_arrowLEFT[0], Assets.btn_arrowLEFT[1], 49, 30);
         goLeftButton.addActionListener(goLeftPanel);
-        goRightButton = new NavigationButton(Assets.btn_arrowRIGHT[0], Assets.btn_arrowRIGHT[1], 60, 30);
+        goRightButton = new NavigationButton(Assets.btn_arrowRIGHT[0], Assets.btn_arrowRIGHT[1], 49, 30);
         goRightButton.addActionListener(goRightPanel);
-        goUpButton = new NavigationButton(Assets.btn_arrowUP[0], Assets.btn_arrowUP[1], 60, 30);
+        goUpButton = new NavigationButton(Assets.btn_arrowUP[0], Assets.btn_arrowUP[1], 49, 30);
         goUpButton.addActionListener(goMainMenu);
     }
 

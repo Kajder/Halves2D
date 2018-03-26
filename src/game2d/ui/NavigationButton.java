@@ -20,9 +20,7 @@ public class NavigationButton extends JButton {
         icon1 = new ImageIcon(newImage1);
         newImage2 = SecondImage.getScaledInstance((int)(width*0.8), (int)(height*0.8), Image.SCALE_SMOOTH);
         icon2 = new ImageIcon(newImage2);
-
         setIcon(icon1);
-        //setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
         setBorder(BorderFactory.createEtchedBorder(Color.BLACK,Color.BLACK));
         setBackground(Color.DARK_GRAY);
 

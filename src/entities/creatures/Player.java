@@ -18,7 +18,7 @@ public class Player extends Creature{
 	boolean up, down, left, right, sprint, moveXallowedOrb=true, moveYallowedOrb=true, moveXallowedFlat=true, moveYallowedFlat=true, callBall;
 	private double tempX=x,tempY=y, prevXdouble, prevYdouble, c1x,c1y,c2x,c2y,deadZone1 = KeyManager.deadZone1, deadZone2 = KeyManager.deadZone2;
 	private double playerAngle, playerMass, footMass, stamina, staminaInitial, staminaForceFactor, staminaForceFactorMax, staminaForceFactorMin, staminaReduction, staminaRebuilt, exhaustedSpeed;
-	private double sprintSpeed=2, sprintBallSpeed=1.5, walkSpeed=1, sprintLoadTime, sprintLoadIncrement, sprintBallLoadIncrement, delta;
+	private double sprintSpeed, sprintBallSpeed, walkSpeed, sprintLoadTime, sprintLoadIncrement, sprintBallLoadIncrement, delta;
 	private float playerFPS, alignmentFPS;
 	private int score, a,b, walkPeriod=10000, currX, currY, prevX, prevY;
 	private boolean setForShot, shotCancelation, dropBallGate=true, isRunning, sprintPrev;
@@ -31,10 +31,13 @@ public class Player extends Creature{
 		super(handler, icon, x, y, DefPlayerWidth,DefPlayerHeight);
 		this.mode = mode;
 		this.goal = goal;
+		sprintSpeed=handler.getParameters().getCustomParameters().get("sprintSpeed")/100;
+		walkSpeed=handler.getParameters().getCustomParameters().get("walkSpeed")/100;
+		sprintBallSpeed=(sprintSpeed+walkSpeed)/2;
 		mayCatch = true;
 		walkPlayer1 = new Animation(walkPeriod, Assets.framesPlayer1);
 		walkPlayer2 = new Animation(walkPeriod, Assets.framesPlayer2);
-		staminaInitial=14000;
+		staminaInitial=handler.getParameters().getCustomParameters().get("stamina");
 		stamina = staminaInitial;
 		exhaustedSpeed=0.5;
 		staminaForceFactorMax=1;
@@ -47,7 +50,8 @@ public class Player extends Creature{
 		sprintBallSpeed*=alignmentFPS;
 		walkSpeed*=alignmentFPS;
 
-		playerMass = 80;//kg
+		if (mode==1)playerMass = handler.getParameters().getCustomParameters().get("blueMass");//kg
+		if (mode==2)playerMass = handler.getParameters().getCustomParameters().get("redMass");//kg
 		footMass = playerMass*0.022;//kg
 		sprintLoadTime=3;
 		sprintLoadIncrement = ((sprintSpeed-walkSpeed))/(sprintLoadTime*handler.getFPS());

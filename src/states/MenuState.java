@@ -60,9 +60,10 @@ private UIManager uiManager;
 		//info button
 		uiManager.addObject(new UIImageButton(handler.getWidth()-100-(btnWidth)/2, 500-(btnHeight)/2, btnWidth, btnHeight, Assets.btn_info, new ClickListener(){
 			public void onClick(){
-			//TrainingState.trainingPlayer=0;
-			//handler.getMouseManager().setUIManager(null);
-			//State.setState(handler.getGame().infoState);
+				TrainingState.trainingPlayer=0;
+				State.setState(new InfoState(handler));
+				handler.getGame().getDisplay().getFrame().validate();
+				handler.getMouseManager().setUIManager(State.getState().getUIManager());
 			}
 		}));	
 	}

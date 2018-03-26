@@ -1,6 +1,9 @@
 package display;
 
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
@@ -53,7 +56,15 @@ public void createDisplay(){
 	frame.setResizable(true);
 	frame.setLocationRelativeTo(null);
 	frame.setVisible(true);
-
+	frame.addMouseMotionListener(new MouseAdapter() {
+		@Override
+		public void mouseDragged(MouseEvent e) {
+			super.mouseDragged(e);
+			System.out.println("dragged");
+		}
+	});
+//its amazing and simple solution thank you so much i did this dispose();
+// 'setUndecorated(true); setExtendedState(JFrame.MAXIMIZED_BOTH); setVisible(true);'
 
 	canvas = new Canvas();
 	canvas.setPreferredSize(new Dimension(width, height));

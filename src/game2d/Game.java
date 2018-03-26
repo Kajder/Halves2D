@@ -9,6 +9,7 @@ import display.MainPanel;
 import gfx.Assets;
 import input.KeyManager;
 import input.MouseManager;
+import model.Parameters;
 import states.*;
 
 import javax.swing.*;
@@ -17,7 +18,8 @@ public class Game implements Runnable{
 
 	private Display display;
 	private MainPanel mainPanel;
-	private int width, height, pitchWidth, modifiedWidth, modifiedHeight;
+	private int width, height, pitchWidth, modifiedWidth, modifiedHeight, mouseToframeX, mouseToframeY;
+	private double ratio = 10; // pitch length is 536 pixels. I want it to be 53meters. So the ratio is 10.
 	public String title;
 	private Thread thread;
 	private boolean running = false;
@@ -27,11 +29,10 @@ public class Game implements Runnable{
 	protected int fps=60;
 	private float compensationFPS=60/fps;
 	private Handler handler;
+	private Parameters parameters;
 	private BufferedImage bufferedImage;
 	//States
 	public State menuState;
-	public State gameState;
-	public State trainingState;
 	//INPUT
 	private KeyManager keyManager;
 	private MouseManager mouseManager;
@@ -45,6 +46,7 @@ public class Game implements Runnable{
 		keyManager = new KeyManager();
 		mouseManager = new MouseManager();
 		handler = new Handler(this);
+		parameters = new Parameters(handler);
 	}
 	
 	public void initDisplay(){
@@ -67,6 +69,7 @@ public class Game implements Runnable{
 	}
 
 	private void tick(){
+		//decorateFrame();
 		keyManager.tick();
 		if (State.getState() != null){
 			State.getState().tick();
@@ -74,7 +77,29 @@ public class Game implements Runnable{
         //System.out.println("focus set on:   "+display.getFrame().getFocusOwner());
 	}
 
+	private void decorateFrame(){
+		mouseToframeX=MouseInfo.getPointerInfo().getLocation().x-display.getFrame().getX();
+		mouseToframeY=MouseInfo.getPointerInfo().getLocation().y-display.getFrame().getY();
 
+		if((mouseToframeX>-10)&&(mouseToframeX<display.getFrame().getWidth()+10)){
+			if((mouseToframeY>-10)&&(mouseToframeY<25)){
+				if (display.getFrame().isUndecorated()) {
+					display.getFrame().dispose();
+					display.getFrame().setUndecorated(false);
+					display.getFrame().setVisible(true);
+					display.getFrame().validate();
+				}
+			}
+		}
+		if((mouseToframeX<-10)||(mouseToframeX>display.getFrame().getWidth()+10)||(mouseToframeY<-10)||(mouseToframeY>25)){
+				if (!display.getFrame().isUndecorated()) {
+					display.getFrame().dispose();
+					display.getFrame().setUndecorated(true);
+					display.getFrame().setVisible(true);
+					display.getFrame().validate();
+				}
+		}
+	}
 
 	public void render(){
 		/*
@@ -176,7 +201,9 @@ public class Game implements Runnable{
 	}
 	public Display getDisplay() {return display;}
 	public int getFPS(){return fps;}
+	public double getRatio(){return ratio;}
 	public float getCompensation(){return compensationFPS;}
+	public Parameters getParameters(){return parameters;}
     public int getModifiedHeight() {return modifiedHeight;}
     public int getModifiedWidth() {return modifiedWidth; }
 }

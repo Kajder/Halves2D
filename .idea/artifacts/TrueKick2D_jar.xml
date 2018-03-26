@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="TrueKick2D:jar">
+  <artifact type="jar" build-on-make="true" name="TrueKick2D:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/TrueKick2D_jar</output-path>
     <root id="archive" name="TrueKick2D.jar">
       <element id="module-output" name="TrueKick2D" />
@@ -46,6 +46,7 @@
       <element id="file-copy" path="$PROJECT_DIR$/../lwjgl-2.9.3/jar/lzma.jar" />
       <element id="file-copy" path="$PROJECT_DIR$/../lwjgl-2.9.3/jar/substance-7.2.1.jar" />
       <element id="file-copy" path="$PROJECT_DIR$/../lwjgl-2.9.3/jar/trident-7.2.1.jar" />
+      <element id="dir-copy" path="$PROJECT_DIR$/libs" />
     </root>
   </artifact>
 </component>

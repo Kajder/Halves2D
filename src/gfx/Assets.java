@@ -8,7 +8,7 @@ public class Assets {
 	horWall, verWall_L, verWall_R, horNet, verNet, balls0, balls1, balls2, balls3, balls4, balls5,cup,
 	redShoe, blueShoe, redShoeTrans, blueShoeTrans, redHalo, blueHalo, ballIndicatorBig, ballIndicatorBlue, ballIndicatorRed,
 	gradientBlue, gradientRed, clock, clockHand, clockFace, whiteFace, blueFace, redFace, whiteBar, blueBar, redBar, menuBackground, halvesText, imgGrass, imgUrban,
-	thunderBlue, thunderRed, kickingShoeBlue, kickingShoeRed;
+	thunderBlue, thunderRed, kickingShoeBlue, kickingShoeRed, photoKajder;
 	//public static Image field;
 	public static BufferedImage[] framesBall, framesPlayer1, framesPlayer2, startBoard, btn_start, btn_trainingP1, btn_trainingP2, btn_settings, btn_info, btn_arrowUP, btn_arrowLEFT, btn_arrowRIGHT;
 	
@@ -172,6 +172,7 @@ public class Assets {
 		thunderRed=sheet.crop(712, 1266, 95, 95);
 		kickingShoeBlue=sheet.crop(617, 1367, 137, 194);
 		kickingShoeRed=sheet.crop(767, 1368, 137, 194);
+		photoKajder=sheet.crop(1026, 600, 200, 283);
 	}
 
 

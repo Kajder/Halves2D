@@ -2,6 +2,7 @@ package game2d;
 
 import input.KeyManager;
 import input.MouseManager;
+import model.Parameters;
 import states.SettingsState;
 import states.State;
 
@@ -20,4 +21,5 @@ public class Handler {
 	public int getPitchWidth(){return game.getPitchWidth();}
 	public int getHeight(){return game.getHeight();}
 	public Game getGame() {return game;}
+	public Parameters getParameters(){return getGame().getParameters();}
 }

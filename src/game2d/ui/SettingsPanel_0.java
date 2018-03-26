@@ -23,24 +23,23 @@ import java.nio.file.Path;
 
 public class SettingsPanel_0 extends SettingsPanel {
     private Handler handler;
-    private JPanel upperPanel, bottomPanel, visualPanel, upperPanel0, upperPanel1, upperPanel2, upperPanel3, fpsPanel, pitchPanel;
+    private JPanel visualPanel, upperPanel1, upperPanel2, upperPanel3, fpsPanel, pitchPanel; // topBar, bottomBar
     private JTextField textField;
-    private JLabel labelFPS, labelPitchType;
+    private JLabel labelFPS, labelPitchType; //labelTitle
     private JRadioButton fps30, fps50, fps60, fps100, pitchGrass, pitchUrban;
     private ButtonGroup groupFPS, groupPitch;
     private ChangeListener listenerSlider;
     private ActionListener listenerRadio30,listenerRadio50,listenerRadio60,listenerRadio100, listenerRadioPitchGrass, listenerRadioPitchUrban;
     private Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
     private ImageIcon iconGrass, iconUrban;
-    private Font font1 = new Font("SansSerif", Font.BOLD, 20);
     private BufferStrategy bs;
     private Path2D path = new Path2D.Float();
     private Graphics g;
     private Graphics2D g2d;
     public SettingsPanel_0(Handler handler){
+        super(handler);
         this.handler = handler;
-        setLayout(new GridLayout(2,1));
-        panelID=0;
+
         //TEXT FIELD
         textField = new JTextField() {
             @Override public void setBorder(Border border) {
@@ -71,11 +70,11 @@ public class SettingsPanel_0 extends SettingsPanel {
         listenerRadio50=event->{handler.getGame().setFPS(50);};
         listenerRadio60=event->{handler.getGame().setFPS(60);};
         listenerRadio100=event->{handler.getGame().setFPS(100);};
-        listenerRadioPitchGrass=event->{Assets.setGrass();};
-        listenerRadioPitchUrban=event->{Assets.setConcrete();};
-
+        listenerRadioPitchGrass=event->{Assets.setGrass();visualPanel.repaint();};
+        listenerRadioPitchUrban=event->{Assets.setConcrete();visualPanel.repaint();};
 
         //LABELS
+        labelTitle.setText("GAMEPLAY");
         //FPS
         labelFPS=new JLabel("FPS: ");
         labelFPS.setBackground(Color.DARK_GRAY);
@@ -107,6 +106,10 @@ public class SettingsPanel_0 extends SettingsPanel {
         fps50 = setRadioButton(fps50, "50",handler.getFPS()==50, Color.DARK_GRAY, Color.WHITE, font1, listenerRadio50);
         fps60 = setRadioButton(fps60, "60",handler.getFPS()==60, Color.DARK_GRAY, Color.WHITE, font1, listenerRadio60);
         fps100 = setRadioButton(fps100, "100",handler.getFPS()==100, Color.DARK_GRAY, Color.WHITE, font1, listenerRadio100);
+        fps30.setFocusPainted(false);
+        fps50.setFocusPainted(false);
+        fps60.setFocusPainted(false);
+        fps100.setFocusPainted(false);
 
         //for radio buttons behaviour only
         groupFPS = new ButtonGroup();
@@ -130,7 +133,9 @@ public class SettingsPanel_0 extends SettingsPanel {
 
         pitchGrass = setRadioButtonIcon(pitchGrass, iconGrass,"Grass", Color.DARK_GRAY, Color.WHITE, font1, listenerRadioPitchGrass);
         pitchGrass.setSelected(true);
+        pitchGrass.setFocusPainted(false);
         pitchUrban = setRadioButtonIcon(pitchUrban, iconUrban,"Urban",Color.DARK_GRAY, Color.WHITE, font1, listenerRadioPitchUrban);
+        pitchUrban.setFocusPainted(false);
         groupPitch = new ButtonGroup();
         groupPitch.add(pitchGrass);
         groupPitch.add(pitchUrban);
@@ -140,16 +145,10 @@ public class SettingsPanel_0 extends SettingsPanel {
         pitchPanel.add(pitchGrass);
         pitchPanel.add(pitchUrban);
 
-        //PANELS
-
-        //upper - options
-        upperPanel = new JPanel(new GridLayout(4,1));
-        upperPanel0 = new JPanel(new GridBagLayout());
         upperPanel1 = new JPanel(new GridLayout(1,2));
         upperPanel2 = new JPanel(new GridLayout(1,2));
         upperPanel3 = new JPanel(new GridLayout(1,2));
-        upperPanel.setBackground(Color.DARK_GRAY);
-        upperPanel0.setBackground(Color.DARK_GRAY);
+
         upperPanel1.setBackground(Color.DARK_GRAY);
         upperPanel2.setBackground(Color.DARK_GRAY);
         upperPanel3.setBackground(Color.DARK_GRAY);
@@ -161,18 +160,9 @@ public class SettingsPanel_0 extends SettingsPanel {
         upperPanel3.add(textField);
         upperPanel3.add(slider);
 
-        upperPanel.add(upperPanel0);
-        upperPanel.add(upperPanel1);
-        upperPanel.add(upperPanel2);
-        upperPanel.add(upperPanel3);
-
-        //bottom
-        bottomPanel = new JPanel();
-        bottomPanel.setBackground(Color.DARK_GRAY);
-        //visualPanel.setPreferredSize(new Dimension(Math.round((int)(bottomPanel.getWidth()/2)),Math.round((int)(bottomPanel.getHeight()*0.9)))); //panel created before action listeners
+        //visualPanel.setPreferredSize(new Dimension(Math.round((int)(bottomBar.getWidth()/2)),Math.round((int)(bottomBar.getHeight()*0.9)))); //panel created before action listeners
         visualPanel.setPreferredSize(new Dimension(469,290));
         visualPanel.setBackground(Color.BLACK);
-        bottomPanel.add(visualPanel);
 
         //Borders
         Border etched = BorderFactory.createEtchedBorder();
@@ -182,9 +172,18 @@ public class SettingsPanel_0 extends SettingsPanel {
         upperPanel3.setBorder(etched);
         visualPanel.setBorder(etched);
 
-        // upper/bottom
-        add(upperPanel);
-        add(bottomPanel);
+        //POPULATING BOTTOM BAR
+        bottomBar.add(upperPanel1, new GBC(0,0,1,1).setFill(1));
+        bottomBar.add(upperPanel2, new GBC(0,1,1,1).setFill(1));
+        bottomBar.add(upperPanel3, new GBC(0,2,1,1).setFill(1));
+        bottomBar.add(visualPanel, new GBC(0,3,1,3).setFill(0));
+        for (int i=0;i<6;i++){
+                bottomBar.add(new ColorPanel(Color.DARK_GRAY), new GBC(0,i,1,1)
+                        .setFill(1)
+                        .setWeight(1,1));
+        }
+    //ADDING MAIN PANELS
+    addTopBottomPanels();
     }
 
     public JRadioButton setRadioButton(JRadioButton button, String label, Boolean state, Color background, Color foreground, Font font, ActionListener listener){
@@ -202,8 +201,7 @@ public class SettingsPanel_0 extends SettingsPanel {
         button.setFont(font);
         button.addActionListener(listener);
         return button;
-    };
-
+    }
     private void paintVisualPanel(Graphics g){
         g2d = (Graphics2D) g;
         g.drawImage(Assets.playground,8,5, 453,280, null);
@@ -218,10 +216,7 @@ public class SettingsPanel_0 extends SettingsPanel {
         g.drawImage(Assets.horWall, 8,visualPanel.getHeight()-20, visualPanel.getWidth()-16,12, null);
         g2d.setClip(null);
         path.reset();
-
-
-    };
-
+    }
     private Path2D calculatePath(Path2D path){
         path.moveTo((int)(272-handler.getPitchWidth()*0.22), 8);
         path.lineTo((int)(272-handler.getPitchWidth()*0.22), visualPanel.getHeight()-8);
@@ -230,30 +225,8 @@ public class SettingsPanel_0 extends SettingsPanel {
         path.closePath();
         return path;
     }
-
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         }
-
-    public void addNavigationButtons(NavigationButton button1, NavigationButton button2, NavigationButton button3){
-        upperPanel0.add(button1, new GBC(18,0,1,1)
-                .setFill(0)
-                .setAnchor(GridBagConstraints.NORTHEAST)
-                .setInsets(5,0,0,10));
-        upperPanel0.add(button2, new GBC(19,0,1,1)
-                .setFill(0)
-                .setAnchor(GridBagConstraints.NORTHEAST)
-                .setInsets(5,0,0,10));
-        upperPanel0.add(button3, new GBC(20,0,1,1)
-                .setFill(0)
-                .setAnchor(GridBagConstraints.NORTHEAST)
-                .setInsets(5,0,0,10));
-        for (int i=0;i<=20;i++){
-            upperPanel0.add(new ColorPanel(Color.darkGray), new GBC(i,0,1,1)
-                    .setFill(1)
-                    .setWeight(1,1));
-        }
-    }
-
 }

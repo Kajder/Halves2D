@@ -28,7 +28,7 @@ private boolean shotCancelation, dropBallFlag;
 private boolean forcePreviousState, thunderVisible;
 private double newAngle, newXP2, newYP2, newW;
 private double contactDur, ballMass, ballAngle, footMass, Vp, Vpx, Vpy, Vf, V, Vx, Vy, Vangle, Vb1, Vb2, Vb2x, Vb2y, Vb2NewAngle, playerAngle;
-private double coefE = 0.68; // e - ball-foot coefficient of restitution, to be defined by user (0-1, but actually 0.46-0.68)
+private double coefE;// e - ball-foot coefficient of restitution, to be defined by user (0-1, but actually 0.46-0.68)
 private double firstTouchPeriod=1, thunderPeriod=2;
 private int forceVal, firstTouchCounter, dropBallCounter, thunderCounter, ballIndicatorSize, ballIndicatorCorrection;
 protected doublePair playerCenter = new doublePair(0,0);
@@ -45,6 +45,7 @@ protected DecimalFormat formatter;
 		this.handler = handler;
 		contactDur = ball.getTk();
 		ballMass = ball.getMass();
+		coefE = handler.getParameters().getCustomParameters().get("restitutionCoef")/100;
 		footMass = player.getFootMass();
 		formatter = new DecimalFormat("#.##", DecimalFormatSymbols.getInstance( Locale.ENGLISH ));
 		formatter.setRoundingMode( RoundingMode.DOWN );
