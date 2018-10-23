@@ -21,7 +21,7 @@ public class InfoPanel_1 extends SettingsPanel {
         mainLabel=new JLabel();
         upperLabel=new JLabel();
 
-        upperString="<html><p align=\"justify\">Hello there! I am Lukasz Kajder, an author of Halves 2D game <br>" +
+        upperString="<html><p align=\"justify\">Hello there! I am Lukasz Kajder, the author of Halves 2D game <br>" +
                 "and I sincerely hope you will have at least as much fun playing the game as I had creating it.<br>" +
                 "It has been a long and interesting journey for me, as the Halves 2D project " +
                 "was the very first one for me written using Object Oriented Programming, first one in JAVA and first game I ever wrote at all.</p</html>";

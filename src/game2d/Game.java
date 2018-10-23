@@ -163,8 +163,6 @@ public class Game implements Runnable{
 		}
 		
 		}
-		
-		
 		stop();
 	}
 	

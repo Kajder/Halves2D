@@ -20,7 +20,7 @@ public class Parameters {
         keys=new String[]{"maxForce","maxAngular","airDensity","restitutionCoef","contactTime","stamina","walkSpeed","sprintSpeed","blueMass","redMass"};
         regValues=new Double[]{2000d,500d,1168d,68d,120d,11000d,50d,100d,80d,80d};
         proValues=new Double[]{3000d,700d,1168d,68d,90d,13000d,75d,150d,80d,80d};
-        superValues=new Double[]{4500d,800d,1168d,68d,80d,14000d,100d,200d,80d,80d};
+        superValues=new Double[]{6500d,800d,1168d,68d,80d,14000d,100d,200d,80d,80d};
         initMaps();
         customParameters.putAll(superParameters);
     }

@@ -224,7 +224,7 @@ public class SettingsPanel_1 extends SettingsPanel {
                 "are radically reduced.</html>";
 
     //CREATING SLIDERS
-        s1 = new SliderPanel(handler, labelS1,  toolTipS1, 2000,5000,handler.getParameters().getCustomParameters().get("maxForce").intValue());
+        s1 = new SliderPanel(handler, labelS1,  toolTipS1, 2000,7000,handler.getParameters().getCustomParameters().get("maxForce").intValue());
         s2 = new SliderPanel(handler, labelS2,  toolTipS2,200,800,handler.getParameters().getCustomParameters().get("maxAngular").intValue());
         s3 = new SliderPanel(handler, labelS3,  toolTipS3,500,3500,handler.getParameters().getCustomParameters().get("airDensity").intValue());
         s4 = new SliderPanel(handler, labelS4,  toolTipS4,40,100,handler.getParameters().getCustomParameters().get("restitutionCoef").intValue());
@@ -242,7 +242,6 @@ public class SettingsPanel_1 extends SettingsPanel {
         s5.setLabelTable(labelsMapWalk);
         s6.setLabelTable(labelsMapSprint);
         s9.setLabelTable(labelsMapContact);
-
 
         //CREATING ACTIONS
         listenerS1 = (event)->{

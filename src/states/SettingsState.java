@@ -39,7 +39,6 @@ public class SettingsState extends State {
         initActions();
         initNavigationButtons();
         addPanel(currentPanel);
-
     }
     
     public void addPanel(int panelID){

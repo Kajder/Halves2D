@@ -23,12 +23,10 @@ public class MyMath{
 		
 		return parameters;
 	}
-
 	public static doublePair lineOnTwoPoints(double x1, double x2, double y1, double y2){	
 		double a = (y2-y1)/(x2-x1);
 		double b = y1-a*x1;
 		doublePair parameters = new doublePair(a,b);
-		
 		return parameters;
 	}
 	
