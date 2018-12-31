@@ -24,7 +24,7 @@ private boolean contactAllowed=true, contactAllowed2=true, force, rotLeft, rotRi
 Handler handler;
 private double forceInd, directionInd, rotationInd, speed;
 private boolean shotExecution;
-private boolean shotCancelation, dropBallFlag;
+private boolean shotCancellation, dropBallFlag;
 private boolean forcePreviousState, thunderVisible;
 private double newAngle, newXP2, newYP2, newW;
 private double contactDur, ballMass, ballAngle, footMass, Vp, Vpx, Vpy, Vf, V, Vx, Vy, Vangle, Vb1, Vb2, Vb2x, Vb2y, Vb2NewAngle, playerAngle;
@@ -62,7 +62,7 @@ protected DecimalFormat formatter;
 			if ((dirRight)&&(directionInd<(ball.getAngleMaxTime()*handler.getFPS())))directionInd++;
 			if ((rotLeft)&&(rotationInd<(ball.getwMaxTime()*handler.getFPS())))rotationInd++;
 			if ((rotRight)&&(rotationInd>(-ball.getwMaxTime()*handler.getFPS())))rotationInd--;
-			if (shotCancelation)
+			if (shotCancellation)
 				{
 				forceInd = 0;
 				directionInd = 0;
@@ -77,7 +77,7 @@ protected DecimalFormat formatter;
 			if ((rotLeft)&&(rotationInd<(ball.getwMaxTime()*handler.getFPS())))rotationInd++;
 			if ((rotRight)&&(rotationInd>(-ball.getwMaxTime()*handler.getFPS())))rotationInd--;
 
-			if ((shotCancelation)||(forceInd==(handler.getFPS()*ball.getforceMaxTime()))||(force==false))
+			if ((shotCancellation)||(forceInd==(handler.getFPS()*ball.getforceMaxTime()))||(force==false))
 				{
 				forceInd = 0;
 				directionInd = 0;
@@ -92,7 +92,7 @@ if (!force) {
 	if ((rotLeft) && (rotationInd < (ball.getwMaxTime() * handler.getFPS()))) rotationInd++;
 	if ((rotRight) && (rotationInd > (-ball.getwMaxTime() * handler.getFPS()))) rotationInd--;
 }
-		if (shotCancelation)	
+		if (shotCancellation)	
 		{
 			forceInd = 0;
 			directionInd = 0;
@@ -106,7 +106,7 @@ if (!force) {
 			dirRight = handler.getKeyManager().P1_dirRight;
 			rotLeft = handler.getKeyManager().P1_rotLeft;
 			rotRight = handler.getKeyManager().P1_rotRight;
-			shotCancelation = handler.getKeyManager().P1_cancelation;
+			shotCancellation = handler.getKeyManager().P1_cancellation;
 			}
 			
 		if (player.getMode()==2){
@@ -115,9 +115,9 @@ if (!force) {
 			dirRight = handler.getKeyManager().P2_dirRight;
 			rotLeft = handler.getKeyManager().P2_rotLeft;
 			rotRight = handler.getKeyManager().P2_rotRight;
-			shotCancelation = handler.getKeyManager().P2_cancelation;
+			shotCancellation = handler.getKeyManager().P2_cancellation;
 			}
-		player.setShotCancelation(shotCancelation);
+		player.setShotCancellation(shotCancellation);
 	}
 
 	public void storeParameters(){
