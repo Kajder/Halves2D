@@ -235,7 +235,7 @@ public class Player extends Creature {
     if (speed > sprintSpeed) {
       speed = (float) sprintSpeed;
     }
-    System.out.println("speed: " + speed + ", increment val: " + sprintLoadIncrement);
+    //System.out.println("speed: " + speed + ", increment val: " + sprintLoadIncrement);
   }
 
   public void calculateSprintBallSpeed() {
@@ -249,7 +249,7 @@ public class Player extends Creature {
     if (speed > sprintBallSpeed) {
       speed = (float) sprintBallSpeed;
     }
-    System.out.println("speed: " + speed + ", increment val: " + sprintBallLoadIncrement);
+    //System.out.println("speed: " + speed + ", increment val: " + sprintBallLoadIncrement);
   }
 
   private void getInput() {

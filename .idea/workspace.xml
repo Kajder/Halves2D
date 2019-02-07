@@ -5,32 +5,34 @@
       <artifact name="TrueKick2D:jar" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/contact/BallPlayerContact.java" line="271" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/src/contact/BallPlayerContact.java" line="220" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/src/states/TrainingState.java" line="337" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/src/states/TrainingState.java" line="247" mnemonic="6" />
+    <bookmark url="file://$PROJECT_DIR$/src/contact/BallPlayerContact.java" line="365" mnemonic="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="37dce2b1-1bd2-4c75-8a9d-63e39e16d472" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/game2d/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/game2d/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/game2d/ui/InfoPanel_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/game2d/ui/InfoPanel_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/game2d/ui/SettingsPanel_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/game2d/ui/SettingsPanel_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/TrueKick2D_jar/TrueKick2D.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TrueKick2D_jar/TrueKick2D.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/icon_rect_2d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/icon_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/icon_round_2d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/textures/sheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/textures/sheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/contact/BallFlatContact.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/contact/BallFlatContact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/contact/BallPlayerContact.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/contact/BallPlayerContact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/entities/creatures/Ball.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entities/creatures/Ball.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/entities/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/entities/creatures/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/gfx2D/ClockIndicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/gfx2D/ClockIndicator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/states/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/states/TrainingState$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/states/TrainingState$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/states/TrainingState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/states/TrainingState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/lwjgl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/lwjgl64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TrueKick2D_jar/TrueKick2D.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contact/BallFlatContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/contact/BallFlatContact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contact/BallPlayerContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/contact/BallPlayerContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/creatures/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/creatures/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/creatures/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game2d/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game2d/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game2d/ui/InfoPanel_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game2d/ui/InfoPanel_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game2d/ui/InfoPanel_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game2d/ui/InfoPanel_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game2d/ui/InfoPanel_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game2d/ui/InfoPanel_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gfx/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx/Assets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gfx2D/ClockIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gfx2D/ClockIndicator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input/KeyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/input/KeyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/states/TrainingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/states/TrainingState.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,35 +57,38 @@
     <session id="-373380193">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="51" />
+          <entry key="java" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="51" />
+          <entry key="JAVA" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="933" />
+          <entry key="java" value="1511" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="933" />
+          <entry key="JAVA" value="1511" />
         </counts>
       </usages-collector>
     </session>
@@ -95,19 +100,169 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
               <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-              <folding>
-                <element signature="e#10086#10087#0" expanded="true" />
-                <element signature="e#10119#10120#0" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game2d/ui/SettingsPanel_1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6240">
+              <caret line="274" column="51" selection-start-line="274" selection-start-column="51" selection-end-line="274" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entities/creatures/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2352">
+              <caret line="108" column="30" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game2d/ui/SettingsPanel_1.java">
+        <entry file="file://$PROJECT_DIR$/src/contact/BallPlayerContact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="240" column="61" selection-start-line="240" selection-start-column="61" selection-end-line="240" selection-end-column="61" />
+            <state relative-caret-position="565">
+              <caret line="386" column="5" selection-start-line="386" selection-start-column="5" selection-end-line="386" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entities/creatures/Ball.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3576">
+              <caret line="157" selection-start-line="157" selection-end-line="157" />
+              <folding>
+                <element signature="e#3625#3626#0" expanded="true" />
+                <element signature="e#3643#3644#0" expanded="true" />
+                <element signature="e#7648#7649#0" expanded="true" />
+                <element signature="e#7671#7672#0" expanded="true" />
+                <element signature="e#7710#7711#0" expanded="true" />
+                <element signature="e#7732#7733#0" expanded="true" />
+                <element signature="e#7763#7764#0" expanded="true" />
+                <element signature="e#7786#7787#0" expanded="true" />
+                <element signature="e#7825#7826#0" expanded="true" />
+                <element signature="e#7847#7848#0" expanded="true" />
+                <element signature="e#7874#7875#0" expanded="true" />
+                <element signature="e#7893#7894#0" expanded="true" />
+                <element signature="e#7928#7929#0" expanded="true" />
+                <element signature="e#7946#7947#0" expanded="true" />
+                <element signature="e#7973#7974#0" expanded="true" />
+                <element signature="e#7992#7993#0" expanded="true" />
+                <element signature="e#8027#8028#0" expanded="true" />
+                <element signature="e#8045#8046#0" expanded="true" />
+                <element signature="e#8086#8087#0" expanded="true" />
+                <element signature="e#8110#8111#0" expanded="true" />
+                <element signature="e#8143#8144#0" expanded="true" />
+                <element signature="e#8168#8169#0" expanded="true" />
+                <element signature="e#8213#8214#0" expanded="true" />
+                <element signature="e#8241#8242#0" expanded="true" />
+                <element signature="e#8278#8279#0" expanded="true" />
+                <element signature="e#8307#8308#0" expanded="true" />
+                <element signature="e#8333#8334#0" expanded="true" />
+                <element signature="e#8351#8352#0" expanded="true" />
+                <element signature="e#8385#8386#0" expanded="true" />
+                <element signature="e#8402#8403#0" expanded="true" />
+                <element signature="e#8436#8437#0" expanded="true" />
+                <element signature="e#8462#8463#0" expanded="true" />
+                <element signature="e#8500#8501#0" expanded="true" />
+                <element signature="e#8521#8522#0" expanded="true" />
+                <element signature="e#8551#8552#0" expanded="true" />
+                <element signature="e#8573#8574#0" expanded="true" />
+                <element signature="e#8618#8619#0" expanded="true" />
+                <element signature="e#8646#8647#0" expanded="true" />
+                <element signature="e#8683#8684#0" expanded="true" />
+                <element signature="e#8712#8713#0" expanded="true" />
+                <element signature="e#8738#8739#0" expanded="true" />
+                <element signature="e#8756#8757#0" expanded="true" />
+                <element signature="e#8790#8791#0" expanded="true" />
+                <element signature="e#8807#8808#0" expanded="true" />
+                <element signature="e#8836#8837#0" expanded="true" />
+                <element signature="e#8857#8858#0" expanded="true" />
+                <element signature="e#8894#8895#0" expanded="true" />
+                <element signature="e#8914#8915#0" expanded="true" />
+                <element signature="e#8947#8948#0" expanded="true" />
+                <element signature="e#8972#8973#0" expanded="true" />
+                <element signature="e#9013#9014#0" expanded="true" />
+                <element signature="e#9037#9038#0" expanded="true" />
+                <element signature="e#9064#9065#0" expanded="true" />
+                <element signature="e#9083#9084#0" expanded="true" />
+                <element signature="e#9112#9113#0" expanded="true" />
+                <element signature="e#9133#9134#0" expanded="true" />
+                <element signature="e#9163#9164#0" expanded="true" />
+                <element signature="e#9185#9186#0" expanded="true" />
+                <element signature="e#9229#9230#0" expanded="true" />
+                <element signature="e#9259#9260#0" expanded="true" />
+                <element signature="e#9289#9290#0" expanded="true" />
+                <element signature="e#9314#9315#0" expanded="true" />
+                <element signature="e#9347#9348#0" expanded="true" />
+                <element signature="e#9371#9372#0" expanded="true" />
+                <element signature="e#9412#9413#0" expanded="true" />
+                <element signature="e#9435#9436#0" expanded="true" />
+                <element signature="e#9468#9469#0" expanded="true" />
+                <element signature="e#9492#9493#0" expanded="true" />
+                <element signature="e#9533#9534#0" expanded="true" />
+                <element signature="e#9556#9557#0" expanded="true" />
+                <element signature="e#9596#9597#0" expanded="true" />
+                <element signature="e#9627#9628#0" expanded="true" />
+                <element signature="e#9675#9676#0" expanded="true" />
+                <element signature="e#9705#9706#0" expanded="true" />
+                <element signature="e#9752#9753#0" expanded="true" />
+                <element signature="e#9781#9782#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/states/GameState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5352">
+              <caret line="244" column="4" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contact/BallFlatContact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+              <folding>
+                <element signature="e#10522#10523#0" expanded="true" />
+                <element signature="e#10553#10554#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/states/TrainingState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7584">
+              <caret line="337" selection-start-line="337" selection-end-line="337" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gfx2D/ClockIndicator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3576">
+              <caret line="156" column="3" selection-start-line="156" selection-start-column="3" selection-end-line="156" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mathToolBoxKajder/MyMath.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1320">
+              <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -124,16 +279,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ro</find>
-      <find>labelsMap</find>
-      <find>for</find>
-      <find>labelsMapDensity</find>
-      <find>formatterCoef</find>
-      <find>labelsMapRestitution</find>
-      <find>contactDur</find>
-      <find>labelsMapContact</find>
-      <find>photoPanel</find>
-      <find>mainLabel</find>
       <find>Round</find>
       <find>List</find>
       <find>goMainMenu</find>
@@ -154,6 +299,16 @@
       <find>cancelation</find>
       <find>Cancelation</find>
       <find>maximum</find>
+      <find>increment val</find>
+      <find>may catch</find>
+      <find>dribble</find>
+      <find>deflect</find>
+      <find>rotate</find>
+      <find>ball</find>
+      <find>goal for</find>
+      <find>ballFor</find>
+      <find>ballForPlayer1()</find>
+      <find>bc:</find>
     </findStrings>
     <replaceStrings>
       <replace>upper</replace>
@@ -201,12 +356,9 @@
         <option value="$PROJECT_DIR$/src/game2d/ui/SelectionPanel.java" />
         <option value="$PROJECT_DIR$/src/states/SelectionState.java" />
         <option value="$PROJECT_DIR$/src/gfx2D/ShotIndicator.java" />
-        <option value="$PROJECT_DIR$/src/contact/BallFlatContact.java" />
         <option value="$PROJECT_DIR$/src/contact/BallOrbContact.java" />
         <option value="$PROJECT_DIR$/src/contact/PlayerFlatContact.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/support/GBC.java" />
-        <option value="$PROJECT_DIR$/src/states/TrainingState.java" />
-        <option value="$PROJECT_DIR$/src/states/GameState.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/support/AbstractSettingsPanel.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/support/SettingsPanel.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/NavigationButton.java" />
@@ -216,7 +368,6 @@
         <option value="$PROJECT_DIR$/src/game2d/ui/SelectionPanel_3.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/SliderPanelOwnLabels.java" />
         <option value="$PROJECT_DIR$/src/game2d/Handler.java" />
-        <option value="$PROJECT_DIR$/src/entities/creatures/Ball.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/SettingsPanel.java" />
         <option value="$PROJECT_DIR$/src/display/Display.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/SliderPanel.java" />
@@ -229,16 +380,20 @@
         <option value="$PROJECT_DIR$/src/mathToolBoxKajder/MyMath.java" />
         <option value="$PROJECT_DIR$/src/game2d/Launcher.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/InfoPanel_1.java" />
-        <option value="$PROJECT_DIR$/src/gfx2D/ClockIndicator.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_3.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_2.java" />
         <option value="$PROJECT_DIR$/src/gfx/Assets.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/InfoPanel_2.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/InfoPanel_3.java" />
         <option value="$PROJECT_DIR$/src/input/KeyManager.java" />
-        <option value="$PROJECT_DIR$/src/entities/creatures/Player.java" />
-        <option value="$PROJECT_DIR$/src/contact/BallPlayerContact.java" />
         <option value="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_1.java" />
+        <option value="$PROJECT_DIR$/src/entities/creatures/Player.java" />
+        <option value="$PROJECT_DIR$/src/contact/BallFlatContact.java" />
+        <option value="$PROJECT_DIR$/src/entities/creatures/Ball.java" />
+        <option value="$PROJECT_DIR$/src/states/TrainingState.java" />
+        <option value="$PROJECT_DIR$/src/gfx2D/ClockIndicator.java" />
+        <option value="$PROJECT_DIR$/src/states/GameState.java" />
+        <option value="$PROJECT_DIR$/src/contact/BallPlayerContact.java" />
       </list>
     </option>
   </component>
@@ -257,8 +412,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -268,6 +423,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,31 +441,6 @@
               <item name="TrueKick2D" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrueKick2D" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrueKick2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrueKick2D" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="contact" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrueKick2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrueKick2D" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="display" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrueKick2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrueKick2D" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrueKick2D" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrueKick2D" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="creatures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TrueKick2D" type="b2602c69:ProjectViewProjectNode" />
@@ -377,16 +509,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="termin&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546459284021" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/lwjgl64.dll" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -479,12 +610,16 @@
       <workItem from="1544282678264" duration="3166000" />
       <workItem from="1545858792472" duration="8670000" />
       <workItem from="1546019546407" duration="1249000" />
-      <workItem from="1546169615348" duration="13440000" />
+      <workItem from="1546169615348" duration="14386000" />
+      <workItem from="1546335739918" duration="12775000" />
+      <workItem from="1546374545212" duration="1951000" />
+      <workItem from="1546453113523" duration="3868000" />
+      <workItem from="1546503427494" duration="627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28397000" />
+    <option name="totallyTimeSpent" value="48564000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,7 +634,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20522387" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21375267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -508,14 +643,14 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32879046" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.489426" visible="true" weight="0.015184382" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.489426" visible="true" weight="0.12689805" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49394855" weight="0.39319873" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4969743" weight="0.32879046" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51057404" side_tool="true" weight="0.48892674" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32518598" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.62934947" weight="0.3270869" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.62934947" weight="0.3264642" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="CheckStyle" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -526,7 +661,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Coverage" order="6" side_tool="true" weight="0.32930514" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32906628" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32889125" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" id="Database" order="9" />
     </layout>
@@ -563,13 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/TrainingState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="133" column="80" selection-start-line="133" selection-start-column="80" selection-end-line="133" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -654,13 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/states/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2688">
-          <caret line="133" column="80" selection-start-line="133" selection-start-column="80" selection-end-line="133" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entities/creatures/Creature.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -686,13 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mathToolBoxKajder/MyMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -731,13 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/contact/BallFlatContact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TrueKick2D.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -756,9 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -776,13 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/creatures/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game2d/ui/SettingsPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -794,13 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3120">
           <caret line="150" selection-start-line="150" selection-end-line="150" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gfx2D/ClockIndicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -832,9 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -865,103 +952,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/contact/BallPlayerContact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-          <folding>
-            <element signature="e#19852#19853#0" expanded="true" />
-            <element signature="e#19878#19879#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/creatures/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13850">
-          <caret line="589" column="20" selection-start-line="589" selection-start-column="20" selection-end-line="589" selection-end-column="20" />
-          <folding>
-            <element signature="e#3954#4162#0" expanded="true" />
-            <element signature="e#4161#4162#0" expanded="true" />
-            <element signature="e#17498#17499#0" expanded="true" />
-            <element signature="e#17520#17521#0" expanded="true" />
-            <element signature="e#17550#17551#0" expanded="true" />
-            <element signature="e#17572#17573#0" expanded="true" />
-            <element signature="e#17601#17602#0" expanded="true" />
-            <element signature="e#17623#17624#0" expanded="true" />
-            <element signature="e#17662#17663#0" expanded="true" />
-            <element signature="e#17690#17691#0" expanded="true" />
-            <element signature="e#17719#17720#0" expanded="true" />
-            <element signature="e#17741#17742#0" expanded="true" />
-            <element signature="e#17780#17781#0" expanded="true" />
-            <element signature="e#17808#17809#0" expanded="true" />
-            <element signature="e#17864#17865#0" expanded="true" />
-            <element signature="e#17902#17903#0" expanded="true" />
-            <element signature="e#17958#17959#0" expanded="true" />
-            <element signature="e#17996#17997#0" expanded="true" />
-            <element signature="e#18037#18038#0" expanded="true" />
-            <element signature="e#18069#18070#0" expanded="true" />
-            <element signature="e#18110#18111#0" expanded="true" />
-            <element signature="e#18142#18143#0" expanded="true" />
-            <element signature="e#18199#18200#0" expanded="true" />
-            <element signature="e#18238#18239#0" expanded="true" />
-            <element signature="e#18295#18296#0" expanded="true" />
-            <element signature="e#18334#18335#0" expanded="true" />
-            <element signature="e#18376#18377#0" expanded="true" />
-            <element signature="e#18409#18410#0" expanded="true" />
-            <element signature="e#18451#18452#0" expanded="true" />
-            <element signature="e#18484#18485#0" expanded="true" />
-            <element signature="e#18527#18528#0" expanded="true" />
-            <element signature="e#18552#18553#0" expanded="true" />
-            <element signature="e#18597#18598#0" expanded="true" />
-            <element signature="e#18624#18625#0" expanded="true" />
-            <element signature="e#18675#18676#0" expanded="true" />
-            <element signature="e#18708#18709#0" expanded="true" />
-            <element signature="e#18738#18739#0" expanded="true" />
-            <element signature="e#18763#18764#0" expanded="true" />
-            <element signature="e#18801#18802#0" expanded="true" />
-            <element signature="e#18825#18826#0" expanded="true" />
-            <element signature="e#18852#18853#0" expanded="true" />
-            <element signature="e#18874#18875#0" expanded="true" />
-            <element signature="e#18910#18911#0" expanded="true" />
-            <element signature="e#18938#18939#0" expanded="true" />
-            <element signature="e#18981#18982#0" expanded="true" />
-            <element signature="e#19016#19017#0" expanded="true" />
-            <element signature="e#19048#19049#0" expanded="true" />
-            <element signature="e#19072#19073#0" expanded="true" />
-            <element signature="e#19111#19112#0" expanded="true" />
-            <element signature="e#19142#19143#0" expanded="true" />
-            <element signature="e#19176#19177#0" expanded="true" />
-            <element signature="e#19201#19202#0" expanded="true" />
-            <element signature="e#19236#19237#0" expanded="true" />
-            <element signature="e#19263#19264#0" expanded="true" />
-            <element signature="e#19313#19314#0" expanded="true" />
-            <element signature="e#19351#19352#0" expanded="true" />
-            <element signature="e#19384#19385#0" expanded="true" />
-            <element signature="e#19409#19410#0" expanded="true" />
-            <element signature="e#19455#19456#0" expanded="true" />
-            <element signature="e#19489#19490#0" expanded="true" />
-            <element signature="e#19524#19525#0" expanded="true" />
-            <element signature="e#19550#19551#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/input/KeyManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="e#10086#10087#0" expanded="true" />
-            <element signature="e#10119#10120#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game2d/ui/SettingsPanel_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="240" column="61" selection-start-line="240" selection-start-column="61" selection-end-line="240" selection-end-column="61" />
+        <state relative-caret-position="6240">
+          <caret line="274" column="51" selection-start-line="274" selection-start-column="51" selection-end-line="274" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/creatures/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2352">
+          <caret line="108" column="30" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entities/creatures/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3576">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
+          <folding>
+            <element signature="e#3625#3626#0" expanded="true" />
+            <element signature="e#3643#3644#0" expanded="true" />
+            <element signature="e#7648#7649#0" expanded="true" />
+            <element signature="e#7671#7672#0" expanded="true" />
+            <element signature="e#7710#7711#0" expanded="true" />
+            <element signature="e#7732#7733#0" expanded="true" />
+            <element signature="e#7763#7764#0" expanded="true" />
+            <element signature="e#7786#7787#0" expanded="true" />
+            <element signature="e#7825#7826#0" expanded="true" />
+            <element signature="e#7847#7848#0" expanded="true" />
+            <element signature="e#7874#7875#0" expanded="true" />
+            <element signature="e#7893#7894#0" expanded="true" />
+            <element signature="e#7928#7929#0" expanded="true" />
+            <element signature="e#7946#7947#0" expanded="true" />
+            <element signature="e#7973#7974#0" expanded="true" />
+            <element signature="e#7992#7993#0" expanded="true" />
+            <element signature="e#8027#8028#0" expanded="true" />
+            <element signature="e#8045#8046#0" expanded="true" />
+            <element signature="e#8086#8087#0" expanded="true" />
+            <element signature="e#8110#8111#0" expanded="true" />
+            <element signature="e#8143#8144#0" expanded="true" />
+            <element signature="e#8168#8169#0" expanded="true" />
+            <element signature="e#8213#8214#0" expanded="true" />
+            <element signature="e#8241#8242#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8307#8308#0" expanded="true" />
+            <element signature="e#8333#8334#0" expanded="true" />
+            <element signature="e#8351#8352#0" expanded="true" />
+            <element signature="e#8385#8386#0" expanded="true" />
+            <element signature="e#8402#8403#0" expanded="true" />
+            <element signature="e#8436#8437#0" expanded="true" />
+            <element signature="e#8462#8463#0" expanded="true" />
+            <element signature="e#8500#8501#0" expanded="true" />
+            <element signature="e#8521#8522#0" expanded="true" />
+            <element signature="e#8551#8552#0" expanded="true" />
+            <element signature="e#8573#8574#0" expanded="true" />
+            <element signature="e#8618#8619#0" expanded="true" />
+            <element signature="e#8646#8647#0" expanded="true" />
+            <element signature="e#8683#8684#0" expanded="true" />
+            <element signature="e#8712#8713#0" expanded="true" />
+            <element signature="e#8738#8739#0" expanded="true" />
+            <element signature="e#8756#8757#0" expanded="true" />
+            <element signature="e#8790#8791#0" expanded="true" />
+            <element signature="e#8807#8808#0" expanded="true" />
+            <element signature="e#8836#8837#0" expanded="true" />
+            <element signature="e#8857#8858#0" expanded="true" />
+            <element signature="e#8894#8895#0" expanded="true" />
+            <element signature="e#8914#8915#0" expanded="true" />
+            <element signature="e#8947#8948#0" expanded="true" />
+            <element signature="e#8972#8973#0" expanded="true" />
+            <element signature="e#9013#9014#0" expanded="true" />
+            <element signature="e#9037#9038#0" expanded="true" />
+            <element signature="e#9064#9065#0" expanded="true" />
+            <element signature="e#9083#9084#0" expanded="true" />
+            <element signature="e#9112#9113#0" expanded="true" />
+            <element signature="e#9133#9134#0" expanded="true" />
+            <element signature="e#9163#9164#0" expanded="true" />
+            <element signature="e#9185#9186#0" expanded="true" />
+            <element signature="e#9229#9230#0" expanded="true" />
+            <element signature="e#9259#9260#0" expanded="true" />
+            <element signature="e#9289#9290#0" expanded="true" />
+            <element signature="e#9314#9315#0" expanded="true" />
+            <element signature="e#9347#9348#0" expanded="true" />
+            <element signature="e#9371#9372#0" expanded="true" />
+            <element signature="e#9412#9413#0" expanded="true" />
+            <element signature="e#9435#9436#0" expanded="true" />
+            <element signature="e#9468#9469#0" expanded="true" />
+            <element signature="e#9492#9493#0" expanded="true" />
+            <element signature="e#9533#9534#0" expanded="true" />
+            <element signature="e#9556#9557#0" expanded="true" />
+            <element signature="e#9596#9597#0" expanded="true" />
+            <element signature="e#9627#9628#0" expanded="true" />
+            <element signature="e#9675#9676#0" expanded="true" />
+            <element signature="e#9705#9706#0" expanded="true" />
+            <element signature="e#9752#9753#0" expanded="true" />
+            <element signature="e#9781#9782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5352">
+          <caret line="244" column="4" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contact/BallFlatContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+          <folding>
+            <element signature="e#10522#10523#0" expanded="true" />
+            <element signature="e#10553#10554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/states/TrainingState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7584">
+          <caret line="337" selection-start-line="337" selection-end-line="337" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gfx2D/ClockIndicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3576">
+          <caret line="156" column="3" selection-start-line="156" selection-start-column="3" selection-end-line="156" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mathToolBoxKajder/MyMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contact/BallPlayerContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="386" column="5" selection-start-line="386" selection-start-column="5" selection-end-line="386" selection-end-column="5" />
         </state>
       </provider>
     </entry>

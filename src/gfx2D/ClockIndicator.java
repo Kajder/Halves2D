@@ -196,6 +196,7 @@ public class ClockIndicator {
     ball.setTY(ball.getY() / ball.getRatio());
     ball.setXPrev2(ball.getX() / ball.getRatio());
     ball.setYPrev2(ball.getY() / ball.getRatio());
+    ballVsPlayer1.updateNumbers();
   }
 
   public void ballForPlayer2() {
@@ -205,6 +206,7 @@ public class ClockIndicator {
     ball.setTY(ball.getY() / ball.getRatio());
     ball.setXPrev2(ball.getX() / ball.getRatio());
     ball.setYPrev2(ball.getY() / ball.getRatio());
+    ballVsPlayer2.updateNumbers();
   }
 
 }

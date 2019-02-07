@@ -231,6 +231,7 @@ public class GameState extends State {
 		ball.setTY(ball.getY()/ball.getRatio());
 		ball.setXPrev2(ball.getX()/ball.getRatio());
 		ball.setYPrev2(ball.getY()/ball.getRatio());
+		ballVsPlayer1.updateNumbers();
 	}
 	public void ballForPlayer2(){
 		ball.setX(handler.getWidth()/2-(Ball.DefBallWidth/2));
@@ -239,6 +240,7 @@ public class GameState extends State {
 		ball.setTY(ball.getY()/ball.getRatio());
 		ball.setXPrev2(ball.getX()/ball.getRatio());
 		ball.setYPrev2(ball.getY()/ball.getRatio());
+		ballVsPlayer2.updateNumbers();
 	}
 	
 	public void isDribbleAllowed(){
