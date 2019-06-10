@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/contact/BallPlayerContact.java" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/entities/creatures/Ball.java" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/entities/creatures/Player.java" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/game2d/Game.java" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/game2d/Launcher.java" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/game2d/ui/InfoPanel_1.java" charset="windows-1250" />
-    <file url="file://$PROJECT_DIR$/src/gfx2D/ShotIndicator.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/contact/BallPlayerContact.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/entities/creatures/Ball.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/entities/creatures/Player.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/game2d/Game.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/game2d/Launcher.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/game2d/ui/InfoPanel_1.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/gfx2D/ShotIndicator.java" charset="windows-1250" />
   </component>
 </project>
