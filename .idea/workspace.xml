@@ -13,155 +13,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/contact/BallPlayerContact.java" line="365" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37dce2b1-1bd2-4c75-8a9d-63e39e16d472" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/libjinput-linux.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/libjinput-linux64.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/liblwjgl.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/liblwjgl64.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/libopenal.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/libopenal64.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Halves2D_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/res.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl64.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.classpath" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/TrueKick2D_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TrueKick2D.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/contact/BallFlatContact.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/contact/BallOrbContact.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/contact/BallPlayerContact.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/contact/ContactManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/contact/PlayerFlatContact.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/contact/PlayerVsOrb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/display/Display$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/display/Display.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/display/MainPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/entities/Entity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/entities/Picture.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/entities/creatures/Ball.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/entities/creatures/Creature.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/entities/creatures/Player$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/entities/creatures/Player.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/Game.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/Handler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/Launcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/ClickListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/InfoPanel_0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/InfoPanel_1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/InfoPanel_2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/InfoPanel_3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/NavigationButton$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/NavigationButton$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/NavigationButton$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/NavigationButton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/SelectionPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/SettingsPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/SettingsPanel_0$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/SettingsPanel_0$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/SettingsPanel_0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/SettingsPanel_1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/SettingsPanel_2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/SettingsPanel_3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/SliderPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/UIImageButton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/UIManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/UIObject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/support/ColorLabel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/support/ColorPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/game2d/ui/support/GBC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/gfx/Animation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/gfx/Assets.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/gfx/ImageLoader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/gfx/SpriteSheet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/gfx2D/ClockIndicator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/gfx2D/ShotIndicator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/gfx2D/staminaIndicator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/input/KeyManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/input/MouseManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/mathToolBoxKajder/MyMath.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/mathToolBoxKajder/doublePair.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/Parameters.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/GameState$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/GameState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/InfoState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/MenuState$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/MenuState$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/MenuState$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/MenuState$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/MenuState$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/MenuState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/SelectionState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/SettingsState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/TrainingState$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/states/TrainingState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/textures/icon_rect.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/contact/BallFlatContact.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/contact/BallOrbContact.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/contact/BallPlayerContact.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/contact/ContactManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/contact/PlayerFlatContact.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/contact/PlayerVsOrb.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/display/Display.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/display/MainPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/entities/Entity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/entities/Picture.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/entities/creatures/Ball.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/entities/creatures/Creature.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/entities/creatures/Player.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/Game.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/Handler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/Launcher.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/ClickListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/InfoPanel_0.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/InfoPanel_1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/InfoPanel_2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/InfoPanel_3.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/NavigationButton.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/SelectionPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_0.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/SettingsPanel_3.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/SliderPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/UIImageButton.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/UIManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/UIObject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/support/ColorLabel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/support/ColorPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game2d/ui/support/GBC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gfx/Animation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gfx/Assets.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gfx/ImageLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gfx/SpriteSheet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gfx2D/ClockIndicator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gfx2D/ShotIndicator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gfx2D/staminaIndicator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/input/KeyManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/input/MouseManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/mathToolBoxKajder/MyMath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/mathToolBoxKajder/doublePair.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/model/Parameters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/states/GameState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/states/InfoState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/states/MenuState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/states/SelectionState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/states/SettingsState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/states/State.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/states/TrainingState.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="37dce2b1-1bd2-4c75-8a9d-63e39e16d472" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -654,6 +506,14 @@
       <workItem from="1546503427494" duration="627000" />
       <workItem from="1549543716652" duration="5120000" />
     </task>
+    <task id="LOCAL-00001" summary="adding Maven and establishing new init base for whole application">
+      <created>1560202142689</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560202142689</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -674,13 +534,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30834752" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2152568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6692913" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2810903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6678024" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.80579215" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -695,7 +556,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30834752" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -705,6 +565,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding Maven and establishing new init base for whole application" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding Maven and establishing new init base for whole application" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -955,6 +819,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -962,6 +827,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
