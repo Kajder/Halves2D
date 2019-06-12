@@ -12,8 +12,6 @@ import input.MouseManager;
 import model.Parameters;
 import states.*;
 
-import javax.swing.*;
-
 public class Game implements Runnable {
 
   private Display display;

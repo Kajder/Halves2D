@@ -3,7 +3,7 @@ package input;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import org.lwjgl.*;
+import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Controller;
 import org.lwjgl.input.Controllers;
 
