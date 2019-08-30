@@ -4,6 +4,9 @@
       <root url="file://$PROJECT_DIR$/res" />
     </CLASSES>
     <JAVADOC />
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/libs" />
+    </NATIVE>
     <SOURCES />
   </library>
 </component>

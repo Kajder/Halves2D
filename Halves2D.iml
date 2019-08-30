@@ -15,7 +15,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/lwjgl/jinput.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/jinput.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -24,7 +24,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/lwjgl/lwjgl.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/lwjgl.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -33,7 +33,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/lwjgl/lwjgl_util.jar!/" />
+          <root url="jar://$MODULE_DIR$/libs/lwjgl_util.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

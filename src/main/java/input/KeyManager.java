@@ -7,7 +7,6 @@ import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Controller;
 import org.lwjgl.input.Controllers;
 
-
 public class KeyManager implements KeyListener {
 
   public boolean P1_up, P1_down, P1_left, P1_right, P1_force, P1_dirLeft, P1_dirRight, P1_rotLeft, P1_rotRight, P1_cancellation, P1_sprint, P1_dropOrCallBall,

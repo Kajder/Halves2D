@@ -6,10 +6,10 @@
         <element id="file-copy" path="$PROJECT_DIR$/target/META-INF/MANIFEST.MF" />
       </element>
       <element id="module-output" name="Halves2D" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lwjgl/lwjgl.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lwjgl/jinput.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lwjgl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jinput.jar" path-in-jar="/" />
       <element id="library" level="project" name="res" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lwjgl/lwjgl_util.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/lwjgl_util.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
