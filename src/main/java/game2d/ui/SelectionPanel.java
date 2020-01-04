@@ -10,23 +10,16 @@ public class SelectionPanel extends JPanel {
     private Dimension dimension;
     private int width, height;
 
-    public SelectionPanel(Handler handler){
+    public SelectionPanel(Handler handler) {
         this.handler = handler;
         width = handler.getGame().getWidth();
         height = handler.getGame().getHeight();
-        setLayout(new GridLayout(2,1));
+        setLayout(new GridLayout(2, 1));
         addMouseListener(handler.getMouseManager());
         addMouseMotionListener(handler.getMouseManager());
         setPreferredSize(new Dimension(width, height));
 
     }
-
-
-
-
-
-
-
 
 
 }

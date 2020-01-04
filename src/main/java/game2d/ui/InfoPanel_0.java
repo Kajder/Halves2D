@@ -1,6 +1,8 @@
 package game2d.ui;
+
 import game2d.Handler;
 import game2d.ui.support.GBC;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -11,11 +13,11 @@ public class InfoPanel_0 extends SettingsPanel {
     private String mainString;
     private Font font = new Font("SansSerif", Font.BOLD, 20);
 
-    public InfoPanel_0(Handler handler){
+    public InfoPanel_0(Handler handler) {
         super(handler);
-        this.handler=handler;
-        mainLabel=new JLabel();
-        mainString="<html>1) Score 5 goals to win the match.<br>" +
+        this.handler = handler;
+        mainLabel = new JLabel();
+        mainString = "<html>1) Score 5 goals to win the match.<br>" +
                 "2) Players cannot step into opponent's half of the pitch.<br>" +
                 "3) Match starts when the referee kicks the ball into the pitch with random force <br>" +
                 "(the ball moves along the center line and it is available for both players).<br>" +
@@ -33,10 +35,10 @@ public class InfoPanel_0 extends SettingsPanel {
         mainLabel.setFont(font);
         mainLabel.setForeground(Color.BLACK);
         mainLabel.setBackground(Color.DARK_GRAY);
-        mainLabel.setPreferredSize(new Dimension(handler.getGame().getDisplay().getCanvas().getWidth(), handler.getGame().getDisplay().getCanvas().getHeight()*9/10));
+        mainLabel.setPreferredSize(new Dimension(handler.getGame().getDisplay().getCanvas().getWidth(), handler.getGame().getDisplay().getCanvas().getHeight() * 9 / 10));
 
         //POPULATING BOTTOM BAR
-        bottomBar.add(mainLabel, new GBC(0,0,1,1).setFill(1).setInsets(20,20,20,20).setWeight(1,1));
+        bottomBar.add(mainLabel, new GBC(0, 0, 1, 1).setFill(1).setInsets(20, 20, 20, 20).setWeight(1, 1));
         labelTitle.setText("RULES AND HINTS");
         addTopBottomPanels();
     }

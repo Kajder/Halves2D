@@ -6,80 +6,80 @@ import java.awt.event.MouseEvent;
 
 public abstract class UIObject {
 
-  protected int x, y, width, height;
-  protected boolean hovering = false;
-  protected Rectangle bounds;
+    protected int x, y, width, height;
+    protected boolean hovering = false;
+    protected Rectangle bounds;
 
-  public UIObject(int x, int y, int width, int height) {
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
-    this.bounds = new Rectangle(x, y, width, height);
-  }
-
-  public abstract void tick();
-
-  public abstract void render(Graphics g);
-
-  public abstract void onClick();
-
-  public void onMouseRelease(MouseEvent e) {
-    if (hovering) {
-      onClick();
+    public UIObject(int x, int y, int width, int height) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.bounds = new Rectangle(x, y, width, height);
     }
-  }
 
-  public void onMouseMove(MouseEvent e) {
-    if (bounds.contains(e.getX(), e.getY())) {
-      hovering = true;
-    } else {
-      hovering = false;
+    public abstract void tick();
+
+    public abstract void render(Graphics g);
+
+    public abstract void onClick();
+
+    public void onMouseRelease(MouseEvent e) {
+        if (hovering) {
+            onClick();
+        }
     }
-  }
 
-  //getters and setters
-  public int getX() {
-    return x;
-  }
+    public void onMouseMove(MouseEvent e) {
+        if (bounds.contains(e.getX(), e.getY())) {
+            hovering = true;
+        } else {
+            hovering = false;
+        }
+    }
 
-  public void setX(int x) {
-    this.x = x;
-    bounds.setBounds(x, y, width, height);
-  }
+    //getters and setters
+    public int getX() {
+        return x;
+    }
 
-  public int getY() {
-    return y;
-  }
+    public void setX(int x) {
+        this.x = x;
+        bounds.setBounds(x, y, width, height);
+    }
 
-  public void setY(int y) {
-    this.y = y;
-    bounds.setBounds(x, y, width, height);
-  }
+    public int getY() {
+        return y;
+    }
 
-  public int getWidth() {
-    return width;
-  }
+    public void setY(int y) {
+        this.y = y;
+        bounds.setBounds(x, y, width, height);
+    }
 
-  public void setWidth(int width) {
-    this.width = width;
-    bounds.setBounds(x, y, width, height);
-  }
+    public int getWidth() {
+        return width;
+    }
 
-  public int getHeight() {
-    return height;
-  }
+    public void setWidth(int width) {
+        this.width = width;
+        bounds.setBounds(x, y, width, height);
+    }
 
-  public void setHeight(int height) {
-    this.height = height;
-    bounds.setBounds(x, y, width, height);
-  }
+    public int getHeight() {
+        return height;
+    }
 
-  public boolean isHovering() {
-    return hovering;
-  }
+    public void setHeight(int height) {
+        this.height = height;
+        bounds.setBounds(x, y, width, height);
+    }
 
-  public void setHovering(boolean hovering) {
-    this.hovering = hovering;
-  }
+    public boolean isHovering() {
+        return hovering;
+    }
+
+    public void setHovering(boolean hovering) {
+        this.hovering = hovering;
+    }
 }

@@ -4,6 +4,7 @@ import game2d.Handler;
 import game2d.ui.support.ColorPanel;
 import game2d.ui.support.GBC;
 import gfx.Assets;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.event.ChangeListener;

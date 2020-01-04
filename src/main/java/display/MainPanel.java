@@ -10,9 +10,9 @@ public class MainPanel extends JPanel {
     private BufferedImage bufferedImage;
 
 
-    public MainPanel(int width, int height){
-        this.width=width;
-        this.height=height;
+    public MainPanel(int width, int height) {
+        this.width = width;
+        this.height = height;
         bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         setBackground(Color.BLUE);
         setFocusable(false);
@@ -23,17 +23,18 @@ public class MainPanel extends JPanel {
 
     }
 
-protected void paintComponent(Graphics g){
-    super.paintComponent(g);
-    if (bufferedImage != null) {
-        g.drawImage(bufferedImage, 0, 0, null);
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        if (bufferedImage != null) {
+            g.drawImage(bufferedImage, 0, 0, null);
+        }
     }
-}
 
     public BufferedImage getImage() {
         return bufferedImage;
     }
-    public void setImage(BufferedImage image){
-    bufferedImage=image;
+
+    public void setImage(BufferedImage image) {
+        bufferedImage = image;
     }
 }

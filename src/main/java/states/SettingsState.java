@@ -1,9 +1,11 @@
 package states;
+
 import game2d.Handler;
 import game2d.ui.*;
 import game2d.ui.UIManager;
 import game2d.ui.support.GBC;
 import gfx.Assets;
+
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -28,33 +30,37 @@ public class SettingsState extends State {
     private int width, height, currentPanel;
 
 
-    public SettingsState(Handler handler){
+    public SettingsState(Handler handler) {
         super(handler);
-        panelsArray=new SettingsPanel[4];
+        panelsArray = new SettingsPanel[4];
         width = handler.getGame().getWidth();
         height = handler.getGame().getHeight();
-        frame=handler.getGame().getDisplay().getFrame();
-        canvas=handler.getGame().getDisplay().getCanvas();
+        frame = handler.getGame().getDisplay().getFrame();
+        canvas = handler.getGame().getDisplay().getCanvas();
         canvas.setVisible(false);
         initActions();
         initNavigationButtons();
         addPanel(currentPanel);
     }
-    
-    public void addPanel(int panelID){
+
+    public void addPanel(int panelID) {
         switch (panelID) {
-            case 0:{
+            case 0: {
                 panelsArray[panelID] = new SettingsPanel_0(handler);
-                break;}
-            case 1:{
+                break;
+            }
+            case 1: {
                 panelsArray[panelID] = new SettingsPanel_1(handler);
-                break;}
-            case 2:{
+                break;
+            }
+            case 2: {
                 panelsArray[panelID] = new SettingsPanel_2(handler);
-                break;}
-            case 3:{
+                break;
+            }
+            case 3: {
                 panelsArray[panelID] = new SettingsPanel_3(handler);
-                break;}
+                break;
+            }
         }
         panelsArray[panelID].addMouseListener(handler.getMouseManager());
         panelsArray[panelID].addMouseMotionListener(handler.getMouseManager());
@@ -76,8 +82,8 @@ public class SettingsState extends State {
         goUpButton.addActionListener(goMainMenu);
     }
 
-    public void initActions(){
-        goMainMenu = event-> {
+    public void initActions() {
+        goMainMenu = event -> {
             goUpButton.changeBackground();
             State.setState(handler.getGame().menuState);
             handler.getMouseManager().setUIManager(State.getState().getUIManager());
@@ -92,25 +98,34 @@ public class SettingsState extends State {
             canvas.setVisible(true);
             frame.validate();
         };
-        goRightPanel = event->{
+        goRightPanel = event -> {
             goRightButton.changeBackground();
             frame.remove(panelsArray[currentPanel]);
             currentPanel++;
-            if (currentPanel==panelsArray.length)currentPanel=0;
+            if (currentPanel == panelsArray.length) currentPanel = 0;
             addPanel(currentPanel);
         };
-        goLeftPanel = event->{
+        goLeftPanel = event -> {
             goLeftButton.changeBackground();
             frame.remove(panelsArray[currentPanel]);
             currentPanel--;
-            if (currentPanel==-1)currentPanel=panelsArray.length-1;
+            if (currentPanel == -1) currentPanel = panelsArray.length - 1;
             addPanel(currentPanel);
         };
 
-           }
-    public void tick(){}
-    public void render(Graphics g){}
-    public void renderG2D(Graphics2D g2d){}
-    public UIManager getUIManager(){return uiManager;}
+    }
+
+    public void tick() {
+    }
+
+    public void render(Graphics g) {
+    }
+
+    public void renderG2D(Graphics2D g2d) {
+    }
+
+    public UIManager getUIManager() {
+        return uiManager;
+    }
 
 }
